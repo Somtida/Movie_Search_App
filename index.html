@@ -7,11 +7,12 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
   <script src="main.js"></script>
-  
+
 </head>
 <body>
   <div class="container">
     <h1>Movie Search App</h1>
+    <br>
     <div class="inputData">
       <label class="">Title: </label>
       <input type="text" class="title">
@@ -36,13 +37,14 @@
         <ul class="pager">
           <li class="previous"><button class="btn btn-info"><span aria-hidden="true">&larr;</span> Previous</button></li>
           <li class="next"><button class="btn btn-info">Next <span aria-hidden="true">&rarr;</span></button></li>
-          
+
         </ul>
       </nav>
     </div>
 
-    <p class="alert alert-primary totalResult"></p>
-    <div class="jumbotron movieListsShow">
+    <p class="totalResult"></p>
+    <p class="notify"></p>
+    <div class="movieListsShow">
     <!-- add -->
 
     </div>
@@ -66,7 +68,7 @@
             <div>imdbID: <span class="imdbID"></span></div>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
     <!-- end     -->
 
@@ -98,10 +100,10 @@
             <div>imdbVotes: <span class="infoimdbVotes"></span></div>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
     <!-- end -->
 
-    
+
 </body>
 </html>

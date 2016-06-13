@@ -1,10 +1,14 @@
+body{
+  padding: 5px;
+  color:#726ea9;
+}
 .movieLists{
   display: none;
 }
 .movieListStyle{
   border: 1px solid green;
   padding: 5px;
-  font-size: 2em;
+  font-size: 1.4em;
 }
 .navPage, .totalResult, .titleInfo, .errorType{
   display: none;
@@ -17,12 +21,13 @@
 }
 .inputData{
   position: relative;
-  border: 1px solid #000;
+  border: 1px solid #825E5E;
   background-color: #eee;
   padding: 5px;
   border-radius: 3px;
   margin:5px;
   display: block;
+  text-align: left;
 }
 .thumbnail{
   width: 80%
@@ -33,4 +38,5 @@
 }
 .info span{
   color: blue;
+  font-size: 1.5em;
 }

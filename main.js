@@ -48,6 +48,7 @@ function searchMovie(){
       var totalResult = data.totalResults;
       var text = `found ${totalResult} resource(s)`;
       $('.totalResult').addClass('alert alert-success').show().text(text);
+      $('.notify').addClass('alert alert-info').show().text("double click to get movie infomation");
 
       if(page==1){
         $('.previous').prop("diabled",false);
@@ -56,7 +57,7 @@ function searchMovie(){
         $('.navPage').show();
       }
 
-      
+
       let $divs = createMovieLists(data.Search);
       // console.log($divs);
       $('.movieListsShow').empty().append($divs);
@@ -95,9 +96,9 @@ function showMovieInfo(){
   // debugger;
   $.ajax(`http://www.omdbapi.com/?i=${imdbID}`)
   .done(function(data){
-      
+
     console.log("data: ",data);
-    
+
     if(data.Response === "False"){
       console.log("data.Response is False")
     }else{
@@ -120,7 +121,7 @@ function showMovieInfo(){
       $divInfo.find('.infoMetascore').text(data.Metascore);
       $divInfo.find('.infoimdbRating').text(data.imdbRating);
       $divInfo.find('.infoimdbVoted').text(data.imdbVoted);
-      
+
       // debugger;
       $($('.movieListStyle')[index]).append($divInfo);
       console.log("movie[index]: ",$('.movieListStyle')[index]);
