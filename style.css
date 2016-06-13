@@ -1,0 +1,36 @@
+.movieLists{
+  display: none;
+}
+.movieListStyle{
+  border: 1px solid green;
+  padding: 5px;
+  font-size: 2em;
+}
+.navPage, .totalResult, .titleInfo, .errorType{
+  display: none;
+}
+.title{
+  width: 40%;
+}
+.year{
+  width: 20%;
+}
+.inputData{
+  position: relative;
+  border: 1px solid #000;
+  background-color: #eee;
+  padding: 5px;
+  border-radius: 3px;
+  margin:5px;
+  display: block;
+}
+.thumbnail{
+  width: 80%
+}
+.info{
+  color: green;
+
+}
+.info span{
+  color: blue;
+}

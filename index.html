@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Seeker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+  <script src="main.js"></script>
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Search App</h1>
+    <div class="inputData">
+      <label class="">Title: </label>
+      <input type="text" class="title">
+      <label for="">Year: </label>
+      <input type="number" min=1990 max=2016 class="year">
+
+      <label>Plot</label>
+      <select name="plot" id="plot">
+        <option value="short">short</option>
+        <option value="full">full</option>
+      </select>
+
+
+      <button class="btn btn-info search">search</button>
+      <button class="btn btn-warning reset">reset</button>
+      <div class="alert alert-danger errorType"></div>
+    </div>
+    <hr>
+
+    <div class="navPage">
+      <nav>
+        <ul class="pager">
+          <li class="previous"><button class="btn btn-info"><span aria-hidden="true">&larr;</span> Previous</button></li>
+          <li class="next"><button class="btn btn-info">Next <span aria-hidden="true">&rarr;</span></button></li>
+          
+        </ul>
+      </nav>
+    </div>
+
+    <p class="alert alert-primary totalResult"></p>
+    <div class="jumbotron movieListsShow">
+    <!-- add -->
+
+    </div>
+
+    <!-- template for search -->
+    <div class="panel panel-primary movieListStyle movieLists">
+      <div class="panel-heading">
+        <h4 class="movieTitle"></h4>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-xs-4 col-md-4">
+            <a href="" class="thumbnail">
+              <img src="" alt="" class="poster">
+            </a>
+          </div>
+          <div class="col-xs-8 col-md-8">
+            <div>Title: <span class="title"></span></div>
+            <div>Year: <span class="year"></span></div>
+            <div>Type: <span class="type"></span></div>
+            <div>imdbID: <span class="imdbID"></span></div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <!-- end     -->
+
+    <!-- template for title -->
+    <div class="panel panel-info info titleInfo">
+      <div class="panel-heading">
+        <h4 class="">Detail:</h4>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-xs-5 col-md-5">
+            <div>Title: <span class="infoTitle"></span></div>
+            <div>Year: <span class="infoYear"></span></div>
+            <div>Rated: <span class="infoRated"></span></div>
+            <div>Released: <span class="infoReleased"></span></div>
+            <div>Runtime: <span class="infoRuntime"></span></div>
+            <div>Genre: <span class="infoGenre"></span></div>
+            <div>Director: <span class="infoDirector"></span></div>
+            <div>Writer: <span class="infoWriter"></span></div>
+            <div>Actors: <span class="infoActors"></span></div>
+          </div>
+          <div class="col-xs-7 col-md-7">
+            <div>Plot: <span class="infoPlot"></span></div>
+            <div>Language: <span class="infoLanguage"></span></div>
+            <div>Country: <span class="infoCountry"></span></div>
+            <div>Awards: <span class="infoAwards"></span></div>
+            <div>Metascore: <span class="infoMetascore"></span></div>
+            <div>imdbRating: <span class="infoimdbRating"></span></div>
+            <div>imdbVotes: <span class="infoimdbVotes"></span></div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <!-- end -->
+
+    
+</body>
+</html>
